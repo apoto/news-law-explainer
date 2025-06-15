@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ニュース法解説エージェント</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles/style.css" rel="stylesheet" />
+  </head>
+  <body class="mdc-typography">
+    <header class="mdc-top-app-bar mdc-top-app-bar--fixed">
+      <div class="mdc-top-app-bar__row">
+        <section
+          class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start"
+        >
+          <span class="mdc-top-app-bar__title">ニュース法解説エージェント</span>
+        </section>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="mdc-layout-grid">
+        <div class="mdc-layout-grid__inner">
+          <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">
+            <h1 class="mdc-typography--headline4">最新の法解説ニュース</h1>
+            <div id="articles-list" class="articles-container">
+              <!-- 記事一覧がここに動的に追加されます -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <script src="scripts/fetchArticles.js"></script>
+  </body>
+</html>
